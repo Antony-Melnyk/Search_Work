@@ -1,0 +1,59 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.f-sidebar-signin.f-form {
+    width: 100%;
+    padding: 10px 30px;
+}
+
+.f-register-signin.f-register {
+    width: 260px;
+    padding: 20px 30px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.f-signin .f-text-divider {
+    margin: 20px 0 20px;
+}
+
+.f-signin .f-btn-control-default {
+    justify-content: flex-end;
+}
+
+.f-signin .f-btn-control-default,
+.f-signin .f-checkbox {
+    margin: 10px 0 0;
+}
+
+.f-register {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 20px 50px 25px;
+}
+
+    .f-register p,
+    .f-register a {
+        margin: 0;
+    }

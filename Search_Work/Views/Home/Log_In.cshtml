@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Log in";
+}
+<h1>Log In</h1>
+<div id="ctl00_Sidebar_login_pnlLoginForm" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_Sidebar_login_lnkLogin')">
+    <div class="fd-f-center-middle ft-c-center">
+        <div class="fd-text-center">
+            <div class="f-form f-signin f-sidebar-signin">
+                Login to account
+                </h3><div class="f-form-inputs"><!--[if lte IE 9]><label></label><![endif]--><div id="divSidebarName" class="f-input f-input-block"><input name="ctl00$Sidebar$login$txbLogin" id="ctl00_Sidebar_login_txbLogin" class="txtName txtSidebarName" type="email" placeholder="Email"></div><!--[if lte IE 9]><label>Пароль</label><![endif]--><div id="divSidebarPassword" class="f-input f-input-block"><input name="ctl00$Sidebar$login$txbPassword" type="password" id="ctl00_Sidebar_login_txbPassword" class="txtPassword txtSidebarPassword" placeholder="Пароль"></div></div><a onclick="javascript:return ValidateSidebarLogin();" id="ctl00_Sidebar_login_lnkLogin" class="f-btn-primary fd-btn-block fd-beefy-soldier" href="javascript:__doPostBack('ctl00$Sidebar$login$lnkLogin','')">Войти</a><div class="fd-f-between fm-c-stretch"><div class="f-checkbox fd-text-default"><label id="lbRemember"><input id="ctl00_Sidebar_login_remember" type="checkbox" name="ctl00$Sidebar$login$remember" checked="checked"><span class="f-checkbox-control"><i class="fi-check-icon"></i></span><span class="fd-craftsmen">Запомнить</span></label></div><a id="ctl00_Sidebar_login_hlinkRemember" class="fd-craftsmen f-btn-control-default" href="/passwordrecovery">Забыли пароль?</a></div><div class="socials-login">
+                    <div class="or-section fd-f-left-middle">
+                    </div>
+                    <hr />
+                    No registration on jobfinder.ua?
+                    </p><a id="ctl00_Sidebar_login_hlinkRegister" class="f-btn-control-default fd-craftsmen" href="/jobsear ch/register">
+                        To register
+                    </a>
+                </div>
+            </div>
+        </div>
+
+

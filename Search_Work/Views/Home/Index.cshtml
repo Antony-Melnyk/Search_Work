@@ -1,0 +1,111 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@*<form name="aspnetForm" method="post" action="https://rabota.ua/" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm" class="inversed-header -bg3 site_rua page_jobsearch experimentGroup_A anonymous jobsearcher authorized_jobsearcher f-bg-ultra-lilac">
+    <div><input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value=""><input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value=""><input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="FA5HqoTCY31V7iIFKi1+/NEhV+f/YSevakT0GYCn5mm5dU2HZhcxK3nafKVxgTrd7iLqV8nYrp8C6W0MdCkdYaiQQnX4+QhbDHjogi3Njk1jABU0F+1rR5wXFKp9EtDBjYCnnqFzuZpqEpcsv8V515OYwfESHeT1M7LUxhJ56DdWvbr9e8r3ndJQR6SsuviU"></div>
+    <script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]></script>
+    <script src="/WebResource.axd?d=x2nkrMJGXkMELz33nwnakObWBsqJVQXblezMVrCXvIWw-scwrc3ZnLpAOnsaAGUY-iVY0Cqi4T6kg8NZxxlyd6P1mZ_brKI2S0e-A2ELXpQ1&amp;t=636531734700000000" type="text/javascript"></script>
+    <script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]></script><div><input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B6A63EAB"></div>
+    <script>document.forms[0].action = window.location;</script><input type="checkbox" id="f-overlay-chkbx"><label class="f-overlay" for="f-overlay-chkbx"></label><aside class="f-sidebar">
+        <label class="f-close-sidebar" for="f-overlay-chkbx"></label>
+        <script type="text/javascript">
+function ValidateLogin() {
+		return true;
+	}*@
+        @*</script>*@
+        @*<style>
+            
+        </style>*@
+        <div id="ctl00_Sidebar_login_pnlLoginForm" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_Sidebar_login_lnkLogin')">
+            <div class="fd-f-center-middle ft-c-center">
+                <div class="fd-text-center">
+                    <div class="f-form f-signin f-sidebar-signin">
+                            Login to account
+                        </h3><div class="f-form-inputs"><!--[if lte IE 9]><label></label><![endif]--><div id="divSidebarName" class="f-input f-input-block"><input name="ctl00$Sidebar$login$txbLogin" id="ctl00_Sidebar_login_txbLogin" class="txtName txtSidebarName" type="email" placeholder="Email"></div><!--[if lte IE 9]><label>Пароль</label><![endif]--><div id="divSidebarPassword" class="f-input f-input-block"><input name="ctl00$Sidebar$login$txbPassword" type="password" id="ctl00_Sidebar_login_txbPassword" class="txtPassword txtSidebarPassword" placeholder="Пароль"></div></div><a onclick="javascript:return ValidateSidebarLogin();" id="ctl00_Sidebar_login_lnkLogin" class="f-btn-primary fd-btn-block fd-beefy-soldier" href="javascript:__doPostBack('ctl00$Sidebar$login$lnkLogin','')">Войти</a><div class="fd-f-between fm-c-stretch"><div class="f-checkbox fd-text-default"><label id="lbRemember"><input id="ctl00_Sidebar_login_remember" type="checkbox" name="ctl00$Sidebar$login$remember" checked="checked"><span class="f-checkbox-control"><i class="fi-check-icon"></i></span><span class="fd-craftsmen">Запомнить</span></label></div><a id="ctl00_Sidebar_login_hlinkRemember" class="fd-craftsmen f-btn-control-default" href="/passwordrecovery">Забыли пароль?</a></div><div class="socials-login">
+                            <div class="or-section fd-f-left-middle">
+                        </div>
+                        <hr/>
+                            No registration on jobfinder.ua?
+                        </p><a id="ctl00_Sidebar_login_hlinkRegister" class="f-btn-control-default fd-craftsmen" href="/jobsear ch/register">
+                                To register
+                        </a>
+                    </div>
+                </div>
+            </div>
+        @*<script>
+            function vhmsgrequired() { return ruavars.ukrainian ? 'Поле, обов`язкове для заповнення' : 'Поле, обязательное для заполнения'; }
+            function vhmsgwrong_format() { return ruavars.ukrainian ? 'Невірний формат' : 'Неверный формат' };
+
+            function thisValidemail(value) {
+            return /^[\w-]+[_\.\-\w]*\w+([\.-]?\w+)*(\.\w{2,14})+$/.test(value);
+            }
+
+            function SetSidebarValidationControl(errorDiv, message, isvalid) {
+            var wrapper = document.getElementById(errorDiv);
+            if (!wrapper) return;
+
+            if (isvalid !== true) {
+            var span = wrapper.querySelector('span.error-message');
+            if (!span) {
+            span = document.createElement('SPAN');
+            span.className = 'error-message';
+            wrapper.appendChild(span);
+            }
+
+            span.innerHTML = message;
+            wrapper.classList.add('error');
+            } else {
+            wrapper.classList.remove('error');
+            }
+            }
+
+            function ValidateSidebarEmail(source, arguments) {
+            var email = jQuery('.txtSidebarName').val();
+            var result = email !== '' && thisValidemail(email);
+
+            var msg = (email === '') ? vhmsgrequired() : vhmsgwrong_format();
+
+            SetSidebarValidationControl('divSidebarName', msg, result);
+            if (arguments) arguments.IsValid = result;
+            return result;
+            }
+
+            function ValidateSidebarPassword(source, arguments) {
+            var name = jQuery('.txtSidebarPassword').val();
+            var result = Trim(name).length != 0;
+            var msg = vhmsgrequired();
+            if (/.*[\s'<>].*/.test(name)) {
+            result = false;
+            msg = 'Недопустимый символ';
+            }
+
+            SetSidebarValidationControl('divSidebarPassword', msg, result);
+            if (arguments) arguments.IsValid = result;
+            return result;
+            }
+
+            function ValidateSidebarLogin() {
+            return ValidateSidebarEmail() && ValidateSidebarPassword();
+            }
+            </script>*@
+    
