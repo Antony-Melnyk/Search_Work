@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "LogIn";
+}
+
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+<h1>LogIn</h1>
+
+<title>Login</title>
+<div class="wrapper">
+    <h2>Login</h2>
+    <p>Please fill in your credentials to log in.</p>
+    <form action="/authentication/login.php" method="post">
+        <div class="form-group ">
+            <label>Email</label>
+            <input type="email" name="email" class="form-control" value="">
+            <span class="help-block"></span>
+        </div>
+        <div class="form-group ">
+            <label>Password</label>
+            <input type="password" name="password" class="form-control">
+            <span class="help-block"></span>
+        </div>
+        
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="Log in">
+        </div>
+        <p>Don't have an account? <a href="register.php">Register now</a>.</p>
+        <p><a href="request-password-reset.php">Forgot your password?</a></p>
+    </form>
+</div>
+
