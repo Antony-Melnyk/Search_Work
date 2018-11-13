@@ -29,6 +29,21 @@
                     <li>@Html.ActionLink("About", "About", "Home", null, new { @style = "color:  #2A37A4" })</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home", null, new { @style = "color:  #2A37A4" })</li>
                     <li>@Html.ActionLink("LogIn", "LogIn", "Home", null, new { @style = "color:  #2A37A4" })</li>
+                    <li class="f-header-menu-list-link ft-hidden fm-hidden f-additional-links -animationout-enabled">
+                        <a href="/%D0%B2%D0%B0%D0%BA%D0%B0%D0%BD%D1%81%D0%B8%D0%B8">
+                            Найти работу
+                        </a><div class="f-additional-links-holder f-paper fd-c-stretch fd-craftsmen -animationout-enabled">
+                            <a class="f-text-black" href="/%D0%B2%D0%B0%D0%BA%D0%B0%D0%BD%D1%81%D0%B8%D0%B8">
+                                По рубрикам
+                            </a><a class="f-text-black" href="/zapros">
+                                По профессиям
+                            </a><a class="f-text-black" href="/украина">
+                                По городам
+                            </a><a class="f-text-black" href="/jobsearch/vip">
+                                По компаниям
+                            </a>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -36,10 +51,28 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
+        @*<input name="keywordjob" type="text" height="800" width="100" border="12" id="keywordjob" placeholder="Enter keywords (for example: accountant, lawyer)" autocomplete="off">*@
+        <form>
+            <div class="form-group ">
+                <label>Search</label>
+                <input name="keywordjob" type="text" aria-describedby="emailHelp" id="keywordjob" class="form-control" placeholder="Enter keywords (for example: accountant, lawyer)" autocomplete="off">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <span class="help-block"></span>
+            </div>
+            <div>
+                <input name="ctl00$content$vacSearch$CityPickerWork$inpCity" type="text" value="Ровно" id="ctl00_content_vacSearch_CityPickerWork_inpCity" placeholder="Все регионы" class="ui-autocomplete-input" autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+        </form>
+
         <footer>
             <p>&copy; @DateTime.Now.Year, @DateTime.Now.Hour:@DateTime.Now.Minute - ASP.NET Project - Job Finder </p>
         </footer>
-    </div>
+</div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
